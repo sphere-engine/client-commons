@@ -1,3 +1,112 @@
 {
-    
+    "exampleApiAnswer": {
+        "httpCode": 123,
+        "httpBody": {
+            "field1": "value1",
+            "field2": "value2",
+            "numericField": 456,
+            "booleanField": true
+        },
+        "connErrno": 123,
+        "connError": "message for curl error"
+    },
+
+    "compilers": {
+        "testSuccess": {
+            "httpCode": 200,
+            "httpBody": {
+                "moreHelp": "sphere-engine.com",
+				"pi": 3.14,
+				"answerToLifeAndEverything": 42,
+				"oOok": true
+            }
+        },
+        "compilersSuccess": {
+            "httpCode": 200,
+            "httpBody": {
+                "items": [
+                    {"name": "C++", "short": "cpp", "geshi": "cpp", "ace": "c_cpp", "ver": "5.1.1"},
+					{"name": "Python", "short": "py", "geshi": "py", "ace": "py", "ver": "2.7"},
+					{"name": "Haskell", "short": "hs", "geshi": "hs", "ace": "hs", "ver": "7.10.3"}
+				]
+            }
+        },
+        "submissionSuccess": {
+            "source": "abc",
+            "compiler": {
+                "id": 11
+            }
+        },
+        "submissionAccessDenied": {
+            "httpCode": 403,
+            "httpBody": {
+                "message": "access denied"
+            }
+        },
+        "submissionNonexistingSubmission": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "submission doesn't exist"
+            }
+        }
+    },
+    "problems": {
+
+    },
+    "exceptions": {
+        "connectionRefused": {
+            "connErrno": 7,
+            "connError": "connection refused"
+        },
+        "connectionIncorrectPort": {
+            "connErrno": 3,
+            "connError": "incorrect port number"
+        },
+        "connectionTimeout": {
+            "connErrno": 28,
+            "connError": "connection timeout"
+        },
+        "unauthorizedAccess": {
+            "httpCode": 401,
+            "httpBody": {
+                "message": "unauthorized access"
+            }
+        },
+        "deniedAccess": {
+            "httpCode": 403,
+            "httpBody": {
+                "message": "access denied"
+            }
+        },
+        "nonexistingSubmission": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "submission doesn't exist"
+            }
+        },
+        "nonexistingJudge": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "judge doesn't exist"
+            }
+        },
+        "nonexistingCompiler": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "compiler doesn't exist"
+            }
+        },
+        "nonexistingProblem": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "problem doesn't exist"
+            }
+        },
+        "nonexistingTestcase": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "testcase doesn't exist"
+            }
+        }
+    }
 }
