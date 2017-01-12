@@ -12,7 +12,7 @@
     },
 
     "compilers": {
-        "testSuccess": {
+        "test": {
             "httpCode": 200,
             "httpBody": {
                 "moreHelp": "sphere-engine.com",
@@ -21,7 +21,7 @@
 				"oOok": true
             }
         },
-        "compilersSuccess": {
+        "compilers": {
             "httpCode": 200,
             "httpBody": {
                 "items": [
@@ -31,27 +31,298 @@
 				]
             }
         },
-        "submissionSuccess": {
-            "source": "abc",
-            "compiler": {
-                "id": 11
+        "getSubmission": {
+            "httpCode": 200,
+            "httpBody": {
+                "source": "abc",
+                "compiler": {
+                    "id": 11
+                }
             }
         },
-        "submissionAccessDenied": {
-            "httpCode": 403,
-            "httpBody": {
-                "message": "access denied"
+        "getSubmissionStream": {
+            "source": {
+                "httpCode": 200,
+                "httpBody": "abc"
+            },
+            "input": {
+                "httpCode": 200,
+                "httpBody": "input"
+            },
+            "output": {
+                "httpCode": 200,
+                "httpBody": "output"
+            },
+            "error": {
+                "httpCode": 200,
+                "httpBody": "error"
+            },
+            "cmpinfo": {
+                "httpCode": 200,
+                "httpBody": "cmpinfo"
             }
         },
-        "submissionNonexistingSubmission": {
-            "httpCode": 404,
+        "createSubmission": {
+            "httpCode": 201,
             "httpBody": {
-                "message": "submission doesn't exist"
+                "id": 1
+            }
+        },
+        "getSubmissions": {
+            "one": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [{"id": 1}]
+                }
+            },
+            "two": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [{"id": 4}, {"id": 9}]
+                }
+            },
+            "empty": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": []
+                }
             }
         }
     },
     "problems": {
-
+        "test": {
+            "httpCode": 200,
+            "httpBody": {
+                "message": "You can use Sphere Engine Problems API."
+            }
+        },
+        "compilers": {
+            "httpCode": 200,
+            "httpBody": {
+                "items": [
+                    {"name": "C++", "short": "cpp", "geshi": "cpp", "ace": "c_cpp", "ver": "5.1.1"},
+					{"name": "Python", "short": "py", "geshi": "py", "ace": "py", "ver": "2.7"},
+					{"name": "Haskell", "short": "hs", "geshi": "hs", "ace": "hs", "ver": "7.10.3"}
+				]
+            }
+        },
+        "getProblems": {
+            "default": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [
+                        {"lastModifiedBody": 123, "lastModifiedSettings": 123}
+                    ],
+                    "paging": {
+                        "limit": 10,
+                        "offset": 0
+                    }
+                }
+            },
+            "limit": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [
+                        {"lastModifiedBody": 123, "lastModifiedSettings": 123}
+                    ],
+                    "paging": {
+                        "limit": 11,
+                        "offset": 0
+                    }
+                }
+            },
+            "shortBody": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [
+                        {"lastModifiedBody": 123, "lastModifiedSettings": 123, "shortBody": "short"}
+                    ],
+                    "paging": {
+                        "limit": 10,
+                        "offset": 0
+                    }
+                }
+            }
+        },
+        "createProblem": {
+            "success": {
+                "httpCode": 201,
+                "httpBody": {
+                    "code": "CODE"
+                }
+            }
+        },
+        "getProblem": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {
+                    "code": "TEST",
+                    "lastModifiedBody": 123,
+                    "lastModifiedSettings": 123
+                }
+            },
+            "shortBody": {
+                "httpCode": 200,
+                "httpBody": {
+                    "code": "TEST",
+                    "shortBody": "short",
+                    "lastModifiedBody": 123,
+                    "lastModifiedSettings": 123
+                }
+            }
+        },
+        "updateProblem": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {}
+            }
+        },
+        "getProblemTestcases": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {
+                    "testcases": [
+                        {"number": 0},
+                        {"number": 1},
+                        {"number": 2}
+                    ]
+                }
+            }
+        },
+        "createProblemTestcase": {
+            "success": {
+                "httpCode": 201,
+                "httpBody": {
+                    "number": 0
+                }
+            }
+        },
+        "getProblemTestcase": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {
+                    "number": 0
+                }
+            }
+        },
+        "updateProblemTestcase": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {}
+            }
+        },
+        "deleteProblemTestcase": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {}
+            }
+        },
+        "getProblemTestcaseFile": {
+            "input": {
+                "httpCode": 200,
+                "httpBody": "in0"
+            },
+            "output": {
+                "httpCode": 200,
+                "httpBody": "out0"
+            },
+            "error": {
+                "httpCode": 200,
+                "httpBody": "error0"
+            },
+            "source": {
+                "httpCode": 200,
+                "httpBody": "source0"
+            },
+            "cmpinfo": {
+                "httpCode": 200,
+                "httpBody": "cmpinfo0"
+            }
+        },
+        "getJudges": {
+            "default": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [
+                        {}
+                    ],
+                    "paging": {
+                        "limit": 10,
+                        "offset": 0
+                    }
+                }
+            },
+            "limit": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [
+                        {}
+                    ],
+                    "paging": {
+                        "limit": 11,
+                        "offset": 0
+                    }
+                }
+            }
+        },
+        "createJudge": {
+            "success": {
+                "httpCode": 201,
+                "httpBody": {
+                    "id": 1
+                }
+            }
+        },
+        "getJudge": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {
+                    "id": 1
+                }
+            }
+        },
+        "updateJudge": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {}
+            }
+        },
+        "getSubmission": {
+            "success": {
+                "httpCode": 200,
+                "httpBody": {
+                    "id": 10
+                }
+            }
+        },
+        "getSubmissions": {
+            "one": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [{"id": 1}]
+                }
+            },
+            "two": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": [{"id": 4}, {"id": 9}]
+                }
+            },
+            "empty": {
+                "httpCode": 200,
+                "httpBody": {
+                    "items": []
+                }
+            }
+        },
+        "createSubmission": {
+            "success": {
+                "httpCode": 201,
+                "httpBody": {
+                    "id": 10
+                }
+            }
+        }
     },
     "exceptions": {
         "connectionRefused": {
@@ -90,6 +361,12 @@
                 "message": "judge doesn't exist"
             }
         },
+        "nonexistingMasterjudge": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "master judge doesn't exist"
+            }
+        },
         "nonexistingCompiler": {
             "httpCode": 404,
             "httpBody": {
@@ -106,6 +383,24 @@
             "httpCode": 404,
             "httpBody": {
                 "message": "testcase doesn't exist"
+            }
+        },
+        "nonexistingUser": {
+            "httpCode": 404,
+            "httpBody": {
+                "message": "user doesn't exist"
+            }
+        },
+        "problemCodeTaken": {
+            "httpCode": 400,
+            "httpBody": {
+                "message": "problem code already taken"
+            }
+        },
+        "problemCodeInvalid": {
+            "httpCode": 400,
+            "httpBody": {
+                "message": "problem code invalid"
             }
         }
     }
