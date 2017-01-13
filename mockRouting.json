@@ -10,8 +10,9 @@
         "compilers": "compilers/compilers",
         "getSubmission": {
             "1": "exceptions/deniedAccess",
-            "2": "compilers/getSubmission",
-            "3": "exceptions/nonexistingSubmission"
+            "2": "compilers/getSubmission/success",
+            "3": "exceptions/nonexistingSubmission",
+            "4": "compilers/getSubmission/invalid"
         },
         "getSubmissionStream": {
             "1_output": "exceptions/deniedAccess",
@@ -20,17 +21,19 @@
             "2_output": "compilers/getSubmissionStream/output",
             "2_error": "compilers/getSubmissionStream/error",
             "2_cmpinfo": "compilers/getSubmissionStream/cmpinfo",
-            "3_output": "exceptions/nonexistingSubmission"
+            "3_output": "exceptions/nonexistingSubmission",
+            "4_source": "compilers/getSubmissionStream/invalid"
         },
         "createSubmission": {
-            "unittest_11_unittestinput": "compilers/createSubmission",
+            "unittest_11_unittestinput": "compilers/createSubmission/success",
             "unit_test_9999_": "exceptions/nonexistingCompiler"
 
         },
         "getSubmissions": {
             "4,9": "compilers/getSubmissions/two",
             "9999,10000": "compilers/getSubmissions/empty",
-            "1": "compilers/getSubmissions/one"
+            "1": "compilers/getSubmissions/one",
+            "911": "compilers/getSubmissions/invalid"
         }
     },
     "problems": {

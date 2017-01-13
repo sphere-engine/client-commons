@@ -32,12 +32,18 @@
             }
         },
         "getSubmission": {
-            "httpCode": 200,
-            "httpBody": {
-                "source": "abc",
-                "compiler": {
-                    "id": 11
+            "success": {
+                "httpCode": 200,
+                "httpBody": {
+                    "source": "abc",
+                    "compiler": {
+                        "id": 11
+                    }
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "getSubmissionStream": {
@@ -60,12 +66,18 @@
             "cmpinfo": {
                 "httpCode": 200,
                 "httpBody": "cmpinfo"
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "createSubmission": {
-            "httpCode": 201,
-            "httpBody": {
-                "id": 1
+            "success": {
+                "httpCode": 201,
+                "httpBody": {
+                    "id": 1
+                }
             }
         },
         "getSubmissions": {
@@ -86,6 +98,10 @@
                 "httpBody": {
                     "items": []
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         }
     },
