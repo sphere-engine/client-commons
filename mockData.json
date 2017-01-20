@@ -35,6 +35,7 @@
             "success": {
                 "httpCode": 200,
                 "httpBody": {
+                    "status": 0,
                     "source": "abc",
                     "compiler": {
                         "id": 11
