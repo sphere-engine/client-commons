@@ -79,6 +79,10 @@
                 "httpBody": {
                     "id": 1
                 }
+            },
+            "invalid": {
+                "httpCode": 201,
+                "httpBody": {}
             }
         },
         "getSubmissions": {
@@ -159,6 +163,10 @@
                         "offset": 0
                     }
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "createProblem": {
@@ -167,6 +175,10 @@
                 "httpBody": {
                     "code": "CODE"
                 }
+            },
+            "invalid": {
+                "httpCode": 201,
+                "httpBody": {}
             }
         },
         "getProblem": {
@@ -186,12 +198,22 @@
                     "lastModifiedBody": 123,
                     "lastModifiedSettings": 123
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "updateProblem": {
             "success": {
                 "httpCode": 200,
                 "httpBody": {}
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {
+                    "field": "content"
+                }
             }
         },
         "getProblemTestcases": {
@@ -204,6 +226,10 @@
                         {"number": 2}
                     ]
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "createProblemTestcase": {
@@ -212,6 +238,10 @@
                 "httpBody": {
                     "number": 0
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "getProblemTestcase": {
@@ -220,18 +250,34 @@
                 "httpBody": {
                     "number": 0
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "updateProblemTestcase": {
             "success": {
                 "httpCode": 200,
                 "httpBody": {}
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {
+                    "field": "content"
+                }
             }
         },
         "deleteProblemTestcase": {
             "success": {
                 "httpCode": 200,
                 "httpBody": {}
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {
+                    "field": "content"
+                }
             }
         },
         "getProblemTestcaseFile": {
@@ -254,6 +300,10 @@
             "cmpinfo": {
                 "httpCode": 200,
                 "httpBody": "cmpinfo0"
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "getJudges": {
@@ -280,6 +330,10 @@
                         "offset": 0
                     }
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "createJudge": {
@@ -288,6 +342,10 @@
                 "httpBody": {
                     "id": 1
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "getJudge": {
@@ -296,12 +354,22 @@
                 "httpBody": {
                     "id": 1
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "updateJudge": {
             "success": {
                 "httpCode": 200,
                 "httpBody": {}
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {
+                    "message": "some data"
+                }
             }
         },
         "getSubmission": {
@@ -310,6 +378,10 @@
                 "httpBody": {
                     "id": 10
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "getSubmissions": {
@@ -330,6 +402,10 @@
                 "httpBody": {
                     "items": []
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         },
         "createSubmission": {
@@ -338,6 +414,10 @@
                 "httpBody": {
                     "id": 10
                 }
+            },
+            "invalid": {
+                "httpCode": 200,
+                "httpBody": {}
             }
         }
     },

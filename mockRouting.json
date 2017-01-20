@@ -26,8 +26,8 @@
         },
         "createSubmission": {
             "unittest_11_unittestinput": "compilers/createSubmission/success",
-            "unit_test_9999_": "exceptions/nonexistingCompiler"
-
+            "unit_test_9999_": "exceptions/nonexistingCompiler",
+            "unit_test_11_invalid": "compilers/createSubmission/invalid"
         },
         "getSubmissions": {
             "4,9": "compilers/getSubmissions/two",
@@ -42,49 +42,58 @@
         "getProblems": {
             "10_0_0": "problems/getProblems/default",
             "11_0_0": "problems/getProblems/limit",
-            "10_0_1": "problems/getProblems/shortBody"
+            "10_0_1": "problems/getProblems/shortBody",
+            "422_422_0": "problems/getProblems/invalid"
         },
         "createProblem": {
             "CODE_Name_Body_maximize_1_1002": "problems/createProblem/success",
             "TEST_taken_problem_code__binary_0_1001": "exceptions/problemCodeTaken",
             "!@#$%^_invalid_problem_code__binary_0_1001": "exceptions/problemCodeInvalid",
-            "UNIQUE_CODE_nonempty_name_body_binary_0_9999": "exceptions/nonexistingMasterjudge"
+            "UNIQUE_CODE_nonempty_name_body_binary_0_9999": "exceptions/nonexistingMasterjudge",
+            "UNIQUE_CODE_invalid_response_body_binary_0_1000": "problems/createProblem/invalid"
         },
         "getProblem": {
             "TEST_0": "problems/getProblem/success",
             "TEST_1": "problems/getProblem/shortBody",
-            "NON_EXISTING_PROBLEM_0": "exceptions/nonexistingProblem"
+            "NON_EXISTING_PROBLEM_0": "exceptions/nonexistingProblem",
+            "P422_0": "problems/getProblem/invalid"
         },
         "updateProblem": {
             "CODE_updated_name_update_maximize_1_1002_": "problems/updateProblem/success",
             "TEST______0,1,2": "problems/updateProblem/success",
             "NON_EXISTING_CODE_nonexisting_problem_code_____": "exceptions/nonexistingProblem",
-            "TEST_nonempty_name_body_binary_0_9999_": "exceptions/nonexistingMasterjudge"
+            "TEST_nonempty_name_body_binary_0_9999_": "exceptions/nonexistingMasterjudge",
+            "CODE_invalid_response_____": "problems/updateProblem/invalid"
         },
         "getProblemTestcases": {
             "TEST": "problems/getProblemTestcases/success",
-            "NON_EXISTING_CODE": "exceptions/nonexistingProblem"
+            "NON_EXISTING_CODE": "exceptions/nonexistingProblem",
+            "INVALID_RESPONSE": "problems/getProblemTestcases/invalid"
         },
         "createProblemTestcase": {
             "TEST_in0_out0_10_2_0": "problems/createProblemTestcase/success",
             "NON_EXISTING_CODE_in0_out0_10_2_1": "exceptions/nonexistingProblem",
-            "TEST_in0_out0_10_9999_1": "exceptions/nonexistingJudge"
+            "TEST_in0_out0_10_9999_1": "exceptions/nonexistingJudge",
+            "TEST_invalid_response__1_1_1": "problems/createProblemTestcase/invalid"
         },
         "getProblemTestcase": {
             "TEST_0": "problems/getProblemTestcase/success",
             "NON_EXISTING_CODE_0": "exceptions/nonexistingProblem",
-            "TEST_9999": "exceptions/nonexistingTestcase"
+            "TEST_9999": "exceptions/nonexistingTestcase",
+            "INVALID_RESPONSE_0": "problems/getProblemTestcase/invalid"
         },
         "updateProblemTestcase": {
             "TEST_0_in0updated_out0updated_10_2_0": "problems/updateProblemTestcase/success",
             "NON_EXISTING_CODE_0_updated_input____0": "exceptions/nonexistingProblem",
             "TEST_9999_updated_input____0": "exceptions/nonexistingTestcase",
-            "TEST_0_updated_input_updated_output_1_9999_0": "exceptions/nonexistingJudge"
+            "TEST_0_updated_input_updated_output_1_9999_0": "exceptions/nonexistingJudge",
+            "TEST_0_invalid_response____0": "problems/updateProblemTestcase/invalid"
         },
         "deleteProblemTestcase": {
             "TEST_0": "problems/deleteProblemTestcase/success",
             "NON_EXISTING_CODE_0": "exceptions/nonexistingProblem",
-            "TEST_9999": "exceptions/nonexistingTestcase"
+            "TEST_9999": "exceptions/nonexistingTestcase",
+            "INVALID_RESONSE_0": "problems/deleteProblemTestcase/invalid"
         },
         "getProblemTestcaseFile": {
             "TEST_0_input": "problems/getProblemTestcaseFile/input",
@@ -93,40 +102,48 @@
             "TEST_0_source": "problems/getProblemTestcaseFile/source",
             "TEST_0_cmpinfo": "problems/getProblemTestcaseFile/cmpinfo",
             "NON_EXISTING_CODE_0_input": "exceptions/nonexistingProblem",
-            "TEST_9999_input": "exceptions/nonexistingTestcase"
+            "TEST_9999_input": "exceptions/nonexistingTestcase",
+            "INVALID_RESPONSE_0_input": "problems/getProblemTestcaseFile/invalid"
         },
         "getJudges": {
             "10_0": "problems/getJudges/default",
-            "11_0": "problems/getJudges/limit"
+            "11_0": "problems/getJudges/limit",
+            "422_422": "problems/getJudges/invalid"
         },
         "createJudge": {
             "source_2_testcase_UT_judge": "problems/createJudge/success",
-            "nonempty_source_9999_testcase_": "exceptions/nonexistingCompiler"
+            "nonempty_source_9999_testcase_": "exceptions/nonexistingCompiler",
+            "invalid_response_1_testcase_": "problems/createJudge/invalid"
         },
         "getJudge": {
             "1": "problems/getJudge/success",
-            "9999": "exceptions/nonexistingJudge"
+            "9999": "exceptions/nonexistingJudge",
+            "422": "problems/getJudge/invalid"
         },
         "updateJudge": {
             "100_updated_source_11_UT_judge_updated": "problems/updateJudge/success",
             "99999999_nonempty_source_1_": "exceptions/nonexistingJudge",
             "100_nonempty_source_9999_": "exceptions/nonexistingCompiler",
-            "1_nonempty_source_1_": "exceptions/deniedAccess"
+            "1_nonempty_source_1_": "exceptions/deniedAccess",
+            "1_invalid_response_1_": "problems/updateJudge/invalid"
         },
         "getSubmission": {
             "10": "problems/getSubmission/success",
-            "9999999999": "exceptions/nonexistingSubmission"
+            "9999999999": "exceptions/nonexistingSubmission",
+            "422": "problems/getSubmission/invalid"
         },
         "createSubmission": {
             "TEST_2_source_0": "problems/createSubmission/success",
             "NON_EXISTING_CODE_1_nonempty_source_0": "exceptions/nonexistingProblem",
             "TEST_9999_nonempty_source_0": "exceptions/nonexistingCompiler",
-            "TEST_1_nonempty_source_999999": "exceptions/nonexistingUser"
+            "TEST_1_nonempty_source_999999": "exceptions/nonexistingUser",
+            "TEST_1_invalid_response_0": "problems/createSubmission/invalid"
         },
         "getSubmissions": {
             "4,9": "problems/getSubmissions/two",
             "9999,10000": "problems/getSubmissions/empty",
-            "1": "problems/getSubmissions/one"
+            "1": "problems/getSubmissions/one",
+            "422": "problems/getSubmissions/invalid"
         }
     }
 }
