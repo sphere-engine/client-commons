@@ -15,19 +15,21 @@
             "4": "compilers/getSubmission/invalid"
         },
         "getSubmissionStream": {
-            "1_output": "exceptions/deniedAccess",
+            "1_stdout": "exceptions/deniedAccess",
             "2_source": "compilers/getSubmissionStream/source",
-            "2_input": "compilers/getSubmissionStream/input",
-            "2_output": "compilers/getSubmissionStream/output",
-            "2_error": "compilers/getSubmissionStream/error",
-            "2_cmpinfo": "compilers/getSubmissionStream/cmpinfo",
-            "3_output": "exceptions/nonexistingSubmission",
+            "2_stdin": "compilers/getSubmissionStream/stdin",
+            "2_stdout": "compilers/getSubmissionStream/stdout",
+            "2_stderr": "compilers/getSubmissionStream/stderr",
+            "2_cmperr": "compilers/getSubmissionStream/cmperr",
+            "3_stdout": "exceptions/nonexistingSubmission",
             "4_source": "compilers/getSubmissionStream/invalid"
         },
         "createSubmission": {
-            "unittest_11_unittestinput": "compilers/createSubmission/success",
-            "unit_test_9999_": "exceptions/nonexistingCompiler",
-            "unit_test_11_invalid": "compilers/createSubmission/invalid"
+            "unittest_11_unittestinput_0__0_0": "compilers/createSubmission/success",
+            "unit_test_9999__0__0_0": "exceptions/nonexistingCompiler",
+            "unit_test_11_invalid_0__0_0": "compilers/createSubmission/invalid",
+            "_9999__0_nonempty_source_0_0": "exceptions/nonexistingCompiler",
+            "_1__0_invalid_response_0_0": "compilers/createSubmission/invalid"
         },
         "getSubmissions": {
             "4,9": "compilers/getSubmissions/two",

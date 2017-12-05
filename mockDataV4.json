@@ -15,19 +15,16 @@
         "test": {
             "httpCode": 200,
             "httpBody": {
-                "moreHelp": "sphere-engine.com",
-				"pi": 3.14,
-				"answerToLifeAndEverything": 42,
-				"oOok": true
+                "message": "You can use Sphere Engine Compilers API."
             }
         },
         "compilers": {
             "httpCode": 200,
             "httpBody": {
                 "items": [
-                    {"name": "C++", "short": "cpp", "geshi": "cpp", "ace": "c_cpp", "ver": "5.1.1"},
-					{"name": "Python", "short": "py", "geshi": "py", "ace": "py", "ver": "2.7"},
-					{"name": "Haskell", "short": "hs", "geshi": "hs", "ace": "hs", "ver": "7.10.3"}
+                    {"name": "C++", "short": "cpp", "version": "5.1.1", "highlighters": {"ace": ""}},
+					{"name": "Python", "short": "py", "version": "2.7", "highlighters": {"ace": ""}},
+					{"name": "Haskell", "short": "hs", "version": "7.10.3", "highlighters": {"ace": ""}}
 				]
             }
         },
@@ -36,7 +33,6 @@
                 "httpCode": 200,
                 "httpBody": {
                     "status": 0,
-                    "source": "abc",
                     "compiler": {
                         "id": 11
                     }
@@ -50,23 +46,23 @@
         "getSubmissionStream": {
             "source": {
                 "httpCode": 200,
-                "httpBody": "abc"
+                "httpBody": "source2"
             },
-            "input": {
+            "stdin": {
                 "httpCode": 200,
-                "httpBody": "input"
+                "httpBody": "stdin2"
             },
-            "output": {
+            "stdout": {
                 "httpCode": 200,
-                "httpBody": "output"
+                "httpBody": "stdout2"
             },
-            "error": {
+            "stderr": {
                 "httpCode": 200,
-                "httpBody": "error"
+                "httpBody": "stderr2"
             },
-            "cmpinfo": {
+            "cmperr": {
                 "httpCode": 200,
-                "httpBody": "cmpinfo"
+                "httpBody": "cmperr2"
             },
             "invalid": {
                 "httpCode": 200,
