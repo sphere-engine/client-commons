@@ -32,7 +32,11 @@
             "success": {
                 "httpCode": 200,
                 "httpBody": {
-                    "status": 0,
+                    "result": {
+                    	"status": {
+                    		"code": 0
+                    	}
+                    },
                     "compiler": {
                         "id": 11
                     }
