@@ -207,7 +207,7 @@
         "updateProblem": {
             "success": {
                 "httpCode": 200,
-                "httpBody": true
+                "httpBody": {}
             },
             "invalid": {
                 "httpCode": 200,
@@ -259,7 +259,7 @@
         "updateProblemTestcase": {
             "success": {
                 "httpCode": 200,
-                "httpBody": true
+                "httpBody": {}
             },
             "invalid": {
                 "httpCode": 200,
@@ -363,7 +363,7 @@
         "updateJudge": {
             "success": {
                 "httpCode": 200,
-                "httpBody": true
+                "httpBody": {}
             },
             "invalid": {
                 "httpCode": 200,
