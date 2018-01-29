@@ -132,7 +132,12 @@
                 "httpCode": 200,
                 "httpBody": {
                     "items": [
-                        {"lastModifiedBody": 123, "lastModifiedSettings": 123}
+                        {
+                            "lastModified": {
+                                "body": 123,
+                                "settings": 123
+                            }
+                        }
                     ],
                     "paging": {
                         "limit": 10,
@@ -144,7 +149,12 @@
                 "httpCode": 200,
                 "httpBody": {
                     "items": [
-                        {"lastModifiedBody": 123, "lastModifiedSettings": 123}
+                        {
+                            "lastModified": {
+                                "body": 123,
+                                "settings": 123
+                            }
+                        }
                     ],
                     "paging": {
                         "limit": 11,
@@ -173,6 +183,7 @@
             "success": {
                 "httpCode": 201,
                 "httpBody": {
+                    "id": 42,
                     "code": "CODE"
                 }
             },
@@ -185,18 +196,24 @@
             "success": {
                 "httpCode": 200,
                 "httpBody": {
+                    "id": 42,
                     "code": "TEST",
-                    "lastModifiedBody": 123,
-                    "lastModifiedSettings": 123
+                    "lastModified": {
+                        "body": 123,
+                        "settings": 123
+                    }
                 }
             },
             "shortBody": {
                 "httpCode": 200,
                 "httpBody": {
+                    "id": 42,
                     "code": "TEST",
                     "shortBody": "short",
-                    "lastModifiedBody": 123,
-                    "lastModifiedSettings": 123
+                    "lastModified": {
+                        "body": 123,
+                        "settings": 123
+                    }
                 }
             },
             "invalid": {

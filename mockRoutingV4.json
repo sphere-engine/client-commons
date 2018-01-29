@@ -15,13 +15,13 @@
             "4": "compilers/getSubmission/invalid"
         },
         "getSubmissionStream": {
-            "1_stdout": "exceptions/deniedAccess",
+            "1_output": "exceptions/deniedAccess",
             "2_source": "compilers/getSubmissionStream/source",
-            "2_stdin": "compilers/getSubmissionStream/stdin",
-            "2_stdout": "compilers/getSubmissionStream/stdout",
-            "2_stderr": "compilers/getSubmissionStream/stderr",
-            "2_cmperr": "compilers/getSubmissionStream/cmperr",
-            "3_stdout": "exceptions/nonexistingSubmission",
+            "2_input": "compilers/getSubmissionStream/stdin",
+            "2_output": "compilers/getSubmissionStream/stdout",
+            "2_error": "compilers/getSubmissionStream/stderr",
+            "2_cmpinfo": "compilers/getSubmissionStream/cmperr",
+            "3_output": "exceptions/nonexistingSubmission",
             "4_source": "compilers/getSubmissionStream/invalid"
         },
         "createSubmission": {
@@ -48,11 +48,11 @@
             "422_422_0": "problems/getProblems/invalid"
         },
         "createProblem": {
-            "CODE_Name_Body_maximize_1_1002": "problems/createProblem/success",
-            "TEST_taken_problem_code__binary_0_1001": "exceptions/problemCodeTaken",
-            "!@#$%^_invalid_problem_code__binary_0_1001": "exceptions/problemCodeInvalid",
-            "UNIQUE_CODE_nonempty_name_body_binary_0_9999": "exceptions/nonexistingMasterjudge",
-            "UNIQUE_CODE_invalid_response_body_binary_0_1000": "problems/createProblem/invalid"
+            "CODE_Name_Body_2_1_1002": "problems/createProblem/success",
+            "TEST_taken_problem_code__0_0_1001": "exceptions/problemCodeTaken",
+            "!@#$%^_invalid_problem_code__0_0_1001": "exceptions/problemCodeInvalid",
+            "UNIQUE_CODE_nonempty_name_body_0_0_9999": "exceptions/nonexistingMasterjudge",
+            "UNIQUE_CODE_invalid_response_body_0_0_1000": "problems/createProblem/invalid"
         },
         "getProblem": {
             "TEST_0": "problems/getProblem/success",
@@ -61,10 +61,10 @@
             "P422_0": "problems/getProblem/invalid"
         },
         "updateProblem": {
-            "CODE_updated_name_update_maximize_1_1002_": "problems/updateProblem/success",
+            "CODE_updated_name_update_2_1_1002_": "problems/updateProblem/success",
             "TEST______0,1,2": "problems/updateProblem/success",
             "NON_EXISTING_CODE_nonexisting_problem_code_____": "exceptions/nonexistingProblem",
-            "TEST_nonempty_name_body_binary_0_9999_": "exceptions/nonexistingMasterjudge",
+            "TEST_nonempty_name_body_0_0_9999_": "exceptions/nonexistingMasterjudge",
             "CODE_invalid_response_____": "problems/updateProblem/invalid"
         },
         "getProblemTestcases": {
@@ -161,10 +161,10 @@
         },
         "getSubmissionFile": {
         	"1_source": "problems/getSubmissionFile/source",
-        	"1_stdout": "problems/getSubmissionFile/stdout",
-        	"1_stderr": "problems/getSubmissionFile/stderr",
-        	"1_cmperr": "problems/getSubmissionFile/cmperr",
-        	"1_psinfo": "problems/getSubmissionFile/psinfo",
+        	"1_output": "problems/getSubmissionFile/stdout",
+        	"1_error": "problems/getSubmissionFile/stderr",
+        	"1_cmpinfo": "problems/getSubmissionFile/cmperr",
+        	"1_debug": "problems/getSubmissionFile/psinfo",
         	"9999999999_source": "exceptions/nonexistingSubmission"
         }
     }
