@@ -25,11 +25,12 @@
             "4_source": "compilers/getSubmissionStream/invalid"
         },
         "createSubmission": {
-            "unittest_11_unittestinput_0__0_0": "compilers/createSubmission/success",
-            "unit_test_9999__0__0_0": "exceptions/nonexistingCompiler",
-            "unit_test_11_invalid_0__0_0": "compilers/createSubmission/invalid",
-            "_9999__0_nonempty_source_0_0": "exceptions/nonexistingCompiler",
-            "_1__0_invalid_response_0_0": "compilers/createSubmission/invalid"
+            "unittest_11_unittestinput_0__0_0_0": "compilers/createSubmission/success",
+            "unit_test_9999__0__0_0_0": "exceptions/nonexistingCompiler",
+            "unit_test_11_invalid_0__0_0_0": "compilers/createSubmission/invalid",
+            "_9999__0_nonempty_source_0_0_0": "exceptions/nonexistingCompiler",
+            "_1__0_invalid_response_0_0_0": "compilers/createSubmission/invalid",
+            "unit_test_1__0__0_0_9999": "exceptions/nonexistingCompilerVersion"
         },
         "getSubmissions": {
             "4,9": "compilers/getSubmissions/two",
@@ -139,15 +140,16 @@
             "422": "problems/getSubmission/invalid"
         },
         "createSubmission": {
-            "TEST_2_source_0__": "problems/createSubmission/success",
-            "NON_EXISTING_CODE_1_nonempty_source_0__": "exceptions/nonexistingProblem",
-            "TEST_9999_nonempty_source_0__": "exceptions/nonexistingCompiler",
-            "TEST_1_invalid_response_0__": "problems/createSubmission/invalid",
-            "TEST_2__0_file1,file2_": "problems/createSubmission/success",
-            "NON_EXISTING_CODE_1__0_file1_": "exceptions/nonexistingProblem",
-            "TEST_9999__0_nonempty_source_": "exceptions/nonexistingCompiler",
-        	"TEST_1__0_invalid_response_": "problems/createSubmission/invalid",
-        	"TEST_2_tar_source_0__": "problems/createSubmission/success"
+            "TEST_2_source_0___0": "problems/createSubmission/success",
+            "NON_EXISTING_CODE_1_nonempty_source_0___0": "exceptions/nonexistingProblem",
+            "TEST_9999_nonempty_source_0___0": "exceptions/nonexistingCompiler",
+            "TEST_1_invalid_response_0___0": "problems/createSubmission/invalid",
+            "TEST_2__0_file1,file2__0": "problems/createSubmission/success",
+            "NON_EXISTING_CODE_1__0_file1__0": "exceptions/nonexistingProblem",
+            "TEST_9999__0_nonempty_source__0": "exceptions/nonexistingCompiler",
+        	"TEST_1__0_invalid_response__0": "problems/createSubmission/invalid",
+        	"TEST_2_tar_source_0___0": "problems/createSubmission/success",
+        	"TEST_1_nonempty_source_0___9999": "exceptions/nonexistingCompilerVersion"
         },
         "updateSubmission": {
         	"1_1": "problems/updateSubmission/success",

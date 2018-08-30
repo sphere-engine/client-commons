@@ -527,6 +527,12 @@
                 "message": "compiler doesn't exist"
             }
         },
+        "nonexistingCompilerVersion": {
+            "httpCode": 400,
+            "httpBody": {
+                "message": "compiler version doesn't exist"
+            }
+        },
         "nonexistingProblem": {
             "httpCode": 404,
             "httpBody": {
