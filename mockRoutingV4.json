@@ -114,9 +114,10 @@
             "422_422": "problems/getJudges/invalid"
         },
         "createJudge": {
-            "source_2_testcase_UT_judge": "problems/createJudge/success",
-            "nonempty_source_9999_testcase_": "exceptions/nonexistingCompiler",
-            "invalid_response_1_testcase_": "problems/createJudge/invalid"
+            "source_2_testcase_UT_judge_0": "problems/createJudge/success",
+            "nonempty_source_9999_testcase__0": "exceptions/nonexistingCompiler",
+            "invalid_response_1_testcase__0": "problems/createJudge/invalid",
+            "nonempty_source_1_testcase__9999": "exceptions/nonexistingCompilerVersion"
         },
         "getJudge": {
             "1": "problems/getJudge/success",
@@ -128,11 +129,12 @@
         	"9999999999_source": "exceptions/nonexistingJudge"
         },
         "updateJudge": {
-            "100_updated_source_11_UT_judge_updated": "problems/updateJudge/success",
-            "99999999_nonempty_source_1_": "exceptions/nonexistingJudge",
-            "100_nonempty_source_9999_": "exceptions/nonexistingCompiler",
-            "1_nonempty_source_1_": "exceptions/deniedAccess",
-            "1_invalid_response_1_": "problems/updateJudge/invalid"
+            "100_updated_source_11_UT_judge_updated_0": "problems/updateJudge/success",
+            "99999999_nonempty_source_1__0": "exceptions/nonexistingJudge",
+            "100_nonempty_source_9999__0": "exceptions/nonexistingCompiler",
+            "1_nonempty_source_1__0": "exceptions/deniedAccess",
+            "1_invalid_response_1__0": "problems/updateJudge/invalid",
+            "100_nonempty_source_1__9999": "exceptions/nonexistingCompilerVersion"
         },
         "getSubmission": {
             "10": "problems/getSubmission/success",
@@ -149,7 +151,8 @@
             "TEST_9999__0_nonempty_source__0": "exceptions/nonexistingCompiler",
         	"TEST_1__0_invalid_response__0": "problems/createSubmission/invalid",
         	"TEST_2_tar_source_0___0": "problems/createSubmission/success",
-        	"TEST_1_nonempty_source_0___9999": "exceptions/nonexistingCompilerVersion"
+        	"TEST_1_nonempty_source_0___9999": "exceptions/nonexistingCompilerVersion",
+        	"TEST_1__0_nonempty_source__9999": "exceptions/nonexistingCompilerVersion"
         },
         "updateSubmission": {
         	"1_1": "problems/updateSubmission/success",
