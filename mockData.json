@@ -499,6 +499,16 @@
             "httpBody": {
                 "message": "problem code invalid"
             }
+        },
+        "nonJsonResponse": {
+            "httpCode": 500,
+            "httpBody": "fatal error"
+        },
+        "invalidJsonResponse": {
+            "httpCode": 502,
+            "httpBody": {
+                "msg": "fatal error"
+            }
         }
     }
 }
