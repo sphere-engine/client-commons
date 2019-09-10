@@ -506,9 +506,7 @@
         },
         "invalidJsonResponse": {
             "httpCode": 502,
-            "httpBody": {
-                "msg": "fatal error"
-            }
+            "httpBody": "{'msg': 'fatal error'}"
         }
     }
 }
