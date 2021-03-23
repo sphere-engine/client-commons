@@ -237,7 +237,7 @@
             "success": {
                 "httpCode": 200,
                 "httpBody": {
-                    "testcases": [
+                    "items": [
                         {"number": 0},
                         {"number": 1},
                         {"number": 2}
