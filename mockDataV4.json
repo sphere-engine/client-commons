@@ -441,9 +441,7 @@
                     "items": [
                         {
                             "id": 1,
-                            "problem": {
-                                "executionMode": "isolated"
-                            }
+                            "executionMode": "isolated"
                         }
                     ]
                 }
@@ -454,15 +452,11 @@
                     "items": [
                         {
                             "id": 4,
-                            "problem": {
-                                "executionMode": "fast"
-                            }
+                            "executionMode": "fast"
                         },
                         {
                             "id": 9,
-                            "problem": {
-                                "executionMode": "isolated"
-                            }
+                            "executionMode": "isolated"
                         }
                     ]
                 }
