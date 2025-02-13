@@ -402,9 +402,7 @@
                 "httpCode": 200,
                 "httpBody": {
                     "id": 10,
-                    "problem": {
-                        "executionMode": "isolated"
-                    }
+                    "executionMode": "isolated"
                 }
             },
             "invalid": {
